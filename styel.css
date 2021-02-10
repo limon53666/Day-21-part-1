@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.fixed-width{
+    max-width: 1300px;
+    margin: auto;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.left{
+    text-align: left;
+}
+.center{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Start-css */
+.header{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+.header-logo{
+    width: 30%;
+}
+.header-logo img {
+    float: left;
+	height: 60px;
+	margin-right: 10px;
+}
+.logo span {
+	display: inline-block;
+	margin-top: 14px;
+	font-size: 27px;
+	font-weight: 500;
+	color: #010101;
+}
+.header-menu{
+    width: 55%;
+}
+.header-button{
+    width: 15%;
+}
+.header-menu ul {
+	list-style: none;
+}
+.header-menu ul li {
+	display: inline-block;
+	padding: 0 15px;
+	font-size: 18px;
+	line-height: 60px;
+}
+.header-menu ul li a{
+    color: #010101;
+}
+.header-menu ul li a:hover{}
+
+/* Dropdown menu */
+.header-menu ul li{
+    position: relative;
+}
+.header-menu ul li ul{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: all .4s ease;
+}
+.header-menu ul li ul li{
+    display: block;
+}
+.header-menu ul li ul li a{
+    display: block;
+}
+.header-menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    transition: all .4s ease;
+}
+
+.header-btn {
+	display: inline-block;
+	border: 2px solid #6278df;
+	padding: 10px 23px;
+	border-radius: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: #6278df;
+	margin-top: 8px;
+    transition: all .4s ease;
+}
+.header-btn:hover{
+   background-color:#6278df;
+   color: #fff !important;
+   transition: all .4s ease;   
+}
+
+/* banner */
+.banner{
+    background-image: url(https://i.postimg.cc/3RJ0DBsG/mbr-4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px;
+    z-index: 1;
+    position: relative;
+    margin-top: 70px;
+}
+.banner::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+.banner h4 {
+	font-size: 25px;
+	color: #fff;
+	font-weight: 400;
+}
+.banner h2 {
+	font-size: 60px;
+	color: #fff;
+	margin: 30px 0;
+}
+.defole-btn i {
+	margin-right: 5px;
+}
+.defole-btn {
+	display: inline-block;
+	background-color: #ffffff;
+	padding: 18px 25px;
+	font-size: 20px;
+	font-weight: 600;
+	color: #7d7d7d;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+.defole-btn:hover{
+    background-color: #6278df;
+    color: #fff !important;
+}
+
+/* banner-bottom */
+.banner-bottom{
+    padding: 100px 0;
+}
+.video-left{
+    width: 48%;
+    float: left;
+}
+.video-content-right{
+    width: 48%;
+    float: right;
+}
+.video-content-right h3 {
+	font-size: 50px;
+	font-weight: 400;
+	margin-bottom: 30px;
+}
+.video-content-right p {
+	color: #767676;
+	font-size: 17px;
+	line-height: 1.8em;
+}
+
+/* service */
+.service{}
+.service-title{}
+.service-title h1 {
+	font-size: 62px;
+	margin-bottom: 30px;
+}
+.service-title p {
+	color: #767676;
+	font-size: 25px;
+	font-weight: 300;
+}
+.service-item {
+	margin: 100px 0;
+}
+.service-box {
+	width: 31.3%;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1);
+	padding: 27px;
+	margin-right: 2%;
+	box-sizing: border-box;
+	margin-bottom: 25px;
+    transition: .4s;
+}
+.service-box:hover{
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.3);
+}
+.s-icon span {
+	width: 60px;
+	display: block;
+	float: left;
+	height: 115px;
+	font-size: 50px;
+	color: #6278df;
+    margin-right: 10px;
+}
+.s-content{}
+.s-content h3 {
+	font-size: 23px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.s-content p {
+	font-size: 20px;
+	color: #767676;
+	line-height: 1.5em;
+}
+/* box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1) */
